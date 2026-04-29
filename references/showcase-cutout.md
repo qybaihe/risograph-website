@@ -11,7 +11,7 @@ Use this when the user wants to package a website, app screen, product page, or 
    - Risograph spot-color shadows, halftone shapes, stamp badges, and bundled icons around it;
    - generous padding so the subject does not touch the image edge.
 3. Keep the green background flat, uniform, and unused inside the subject.
-4. Remove the green background with the built-in chroma-key helper from the image generation skill.
+4. Remove the green background with this package's portable chroma-key helper.
 5. Validate transparent corners, clean edges, and no visible green fringe.
 
 ## Showcase Prompt
@@ -26,10 +26,10 @@ No green anywhere inside the subject. No cast shadow on the background, no floor
 
 ## Local Chroma-Key Removal
 
-Use the installed helper:
+Use the helper bundled with this package:
 
 ```bash
-python "${CODEX_HOME:-$HOME/.codex}/skills/.system/imagegen/scripts/remove_chroma_key.py" \
+python scripts/remove_chroma_key.py \
   --input <source-green-screen.png> \
   --out <transparent-showcase.png> \
   --auto-key border \

@@ -2,34 +2,63 @@
   <img src="assets/risograph-website-header.png" alt="Risograph Website - retro print style for any website" width="100%" />
 </p>
 
-# Risograph Website
+<h1 align="center">Risograph Website</h1>
 
-把任何网站、Web App、Landing Page、Dashboard 或 UI 原型包装成现代 **Risograph 复古印刷风** 的 Codex Skill。
+<p align="center">
+  <strong>把任何网站包装成现代 Risograph 复古印刷风</strong><br />
+  <strong>Turn any website into a modern retro Risograph print experience</strong>
+</p>
 
-It is a Codex skill for transforming websites, web apps, landing pages, dashboards, and UI prototypes into a modern **retro Risograph print** style.
+<p align="center">
+  <a href="#zh-cn"><img alt="中文" src="https://img.shields.io/badge/%E9%98%85%E8%AF%BB-%E4%B8%AD%E6%96%87-F05242?style=for-the-badge" /></a>
+  <a href="#en"><img alt="English" src="https://img.shields.io/badge/Read-English-335CFF?style=for-the-badge" /></a>
+</p>
+
+<p align="center">
+  Codex · Claude Code · Cursor · other AI coding agents / AI IDEs
+</p>
 
 ---
 
+<a id="zh-cn"></a>
+
 ## 中文
 
-`risograph-website` 不是一个简单的“换皮提示词”。它是一套给 Agent 使用的风格工程资产：视觉系统、转换提示词、图标库、绿幕展示图流程、语义选图脚本和验证清单。
+`risograph-website` 不是一个只给 Codex 用的提示词，而是一套可迁移的 **AI IDE 风格工程包**：`SKILL.md`、视觉系统、转换提示词、160 个透明 PNG 图标、绿幕展示图流程、语义选图脚本和抠像工具。
 
-目标是让网站有暖纸底、粗墨线、有限专色、轻微错版、网点颗粒和独立印刷品的手工质感，同时保留原网站的信息架构、产品逻辑、可访问性和核心交互。
+它可以被 Codex 原生作为 Skill 使用，也可以被 Claude Code、Cursor、Windsurf、Cline、OpenCode 等 AI 编程环境作为规则库、项目上下文或 Agent Skill 资产包使用。
+
+### 它做什么
+
+把现有网站、Web App、Landing Page、Dashboard 或 UI 原型转换成现代 Risograph 复古印刷风，同时保留原有的信息架构、产品逻辑、可访问性和核心交互。
+
+风格目标包括：
+
+- 暖纸底、深墨文字、粗线描边
+- 朱红、暖黄、蓝、靛蓝、紫、粉等有限专色
+- 轻微错版套色、低透明网点、Overprint 层次
+- 印章标签、裁切标记、海报式分区
+- 160 个透明 PNG Risograph 图标
+- 绿幕展示图，方便后续抠成透明 PNG
 
 ### 适合用在
 
-- Landing Page、产品官网、作品集、课程页
+- 产品官网、Landing Page、作品集、课程页
 - SaaS 工具、编辑器、控制台、Dashboard
 - 表单、结账页、空状态、Onboarding
 - App Store / 公众号 / 社交媒体用的网站展示图
-- 需要绿幕生成后抠成透明 PNG 的展示资产
+- PPT / Pitch Deck / 发布海报视觉资产
 
-### 包含什么
+### 目录结构
 
 ```text
 risograph-website/
 ├── SKILL.md
 ├── agents/openai.yaml
+├── adapters/
+│   ├── CLAUDE.md
+│   ├── cursor-rule.mdc
+│   └── generic-agent-prompt.md
 ├── references/
 │   ├── visual-system.md
 │   ├── transformation-prompt.md
@@ -39,41 +68,53 @@ risograph-website/
 ├── scripts/
 │   ├── select_icons.py
 │   ├── copy_icons.py
-│   └── build_icon_manifest.py
+│   ├── build_icon_manifest.py
+│   └── remove_chroma_key.py
 └── assets/
     ├── risograph-website-header.png
     └── risograph-icons-160/
-        ├── icons/                 # 160 个透明 PNG 图标
-        ├── sheets/                # 10 张 4x4 绿幕源图
+        ├── icons/
+        ├── sheets/
         ├── prompts/sheet-prompts.md
         └── wiki/icon-wiki.tsv
 ```
 
-### 风格关键词
+### 安装与接入
 
-- 暖纸底和深墨文字
-- Risograph 专色：朱红、暖黄、蓝、靛蓝、紫、粉
-- 粗线描边、错版套色、低透明网点
-- 印章标签、裁切标记、海报式分区
-- 透明 PNG 图标贴纸
-- 绿幕展示图和透明抠像资产
-
-### 安装
-
-把仓库放到 Codex Skills 目录下：
+Codex 原生 Skill：
 
 ```bash
 cd ~/.codex/skills
 git clone https://github.com/qybaihe/risograph-website.git
 ```
 
-之后在 Codex 中可以直接说：
+Claude Code / Claude：
 
-```text
-用 risograph-website 把这个网站改成现代 Risograph 复古印刷风，图标从内置库里挑，保持功能不变。
+```bash
+git clone https://github.com/qybaihe/risograph-website.git
 ```
 
+把 `adapters/CLAUDE.md` 的内容合并到目标项目的 `CLAUDE.md`，或让 Claude 读取本仓库的 `SKILL.md`、`references/`、`assets/` 和 `scripts/`。
+
+Cursor：
+
+```bash
+git clone https://github.com/qybaihe/risograph-website.git
+mkdir -p .cursor/rules
+cp risograph-website/adapters/cursor-rule.mdc .cursor/rules/risograph-website.mdc
+```
+
+其他 AI IDE：
+
+使用 `adapters/generic-agent-prompt.md` 作为系统提示词或项目规则，并让 Agent 读取本仓库资源。
+
 ### 最小使用示例
+
+让 Agent 执行：
+
+```text
+用 risograph-website 把这个网站改成现代 Risograph 复古印刷风。保留现有功能，从内置图标库挑选语义匹配的图标，并生成可用于展示的透明抠像图。
+```
 
 按语义找图标：
 
@@ -90,27 +131,22 @@ python scripts/copy_icons.py \
   --manifest
 ```
 
-生成图标 manifest：
+把绿幕图抠成透明 PNG：
 
 ```bash
-python scripts/build_icon_manifest.py
+python scripts/remove_chroma_key.py \
+  --input ./showcase-green.png \
+  --out ./showcase-transparent.png \
+  --auto-key border \
+  --soft-matte \
+  --transparent-threshold 12 \
+  --opaque-threshold 220 \
+  --despill
 ```
 
-### 绿幕展示图
-
-`references/showcase-cutout.md` 定义了一个稳定流程：先把网站截图包装成 Risograph 风格的绿幕展示图，再用 chroma-key 抠成透明 PNG。
-
-这适合做：
-
-- 官网 Hero 展示物
-- 公众号封面和配图
-- App Store 截图素材
-- PPT / Pitch Deck 视觉资产
-- 社交媒体宣传图
-
-核心原则是：背景必须是纯 `#00ff00`，主体不能使用绿色，边缘要留足 padding，抠像后检查四角透明和绿色溢边。
-
 ### 使用边界
+
+好的 Risograph 网站应该像一张能工作的印刷品：有触感，但不妨碍任务完成。
 
 请避免：
 
@@ -120,30 +156,47 @@ python scripts/build_icon_manifest.py
 - 用装饰挡住按钮、导航或产品截图
 - 把 Dashboard 变成海报，牺牲扫描效率
 
-好的 Risograph 网站应该像一张能工作的印刷品：有触感，但不妨碍任务完成。
-
 ---
+
+<a id="en"></a>
 
 ## English
 
-`risograph-website` is not just a prompt. It is a style system for agents: visual rules, transformation guidance, bundled icons, green-screen showcase workflow, semantic icon scripts, and verification checks.
+`risograph-website` is not a Codex-only prompt. It is a portable **AI IDE style engineering pack**: `SKILL.md`, visual-system references, transformation prompts, 160 transparent PNG icons, green-screen showcase guidance, semantic icon scripts, and a built-in chroma-key helper.
 
-Its goal is to give a website the tactile charm of retro Risograph print: warm paper surfaces, chunky ink outlines, limited spot colors, slight misregistration, halftone grain, and zine/poster energy, while preserving the original product logic, information architecture, accessibility, and interactions.
+It works as a native Codex Skill, and it can also be used by Claude Code, Cursor, Windsurf, Cline, OpenCode, and other AI coding agents as a project rule pack, context bundle, or agent skill asset library.
+
+### What it does
+
+It transforms existing websites, web apps, landing pages, dashboards, or UI prototypes into a modern retro Risograph print style while preserving the original information architecture, product logic, accessibility, and core interactions.
+
+The style target includes:
+
+- Warm paper surfaces, dark ink text, chunky outlines
+- Limited spot colors: vermilion, yellow, blue, indigo, violet, pink
+- Slight color misregistration, low-opacity halftone fields, overprint layers
+- Stamp labels, crop marks, poster-like sections
+- 160 transparent PNG Risograph icons
+- Green-screen website mockups for transparent PNG cutouts
 
 ### Best for
 
-- Landing pages, product sites, portfolios, course pages
+- Product sites, landing pages, portfolios, course pages
 - SaaS tools, editors, consoles, dashboards
 - Forms, checkout flows, empty states, onboarding
 - Website showcase images for app stores, newsletters, social media, or decks
-- Green-screen mockups that should become transparent PNG assets
+- Pitch decks, launch posters, and presentation visuals
 
-### What's included
+### Repository layout
 
 ```text
 risograph-website/
 ├── SKILL.md
 ├── agents/openai.yaml
+├── adapters/
+│   ├── CLAUDE.md
+│   ├── cursor-rule.mdc
+│   └── generic-agent-prompt.md
 ├── references/
 │   ├── visual-system.md
 │   ├── transformation-prompt.md
@@ -153,41 +206,53 @@ risograph-website/
 ├── scripts/
 │   ├── select_icons.py
 │   ├── copy_icons.py
-│   └── build_icon_manifest.py
+│   ├── build_icon_manifest.py
+│   └── remove_chroma_key.py
 └── assets/
     ├── risograph-website-header.png
     └── risograph-icons-160/
-        ├── icons/                 # 160 transparent PNG icons
-        ├── sheets/                # 10 green-screen 4x4 source sheets
+        ├── icons/
+        ├── sheets/
         ├── prompts/sheet-prompts.md
         └── wiki/icon-wiki.tsv
 ```
 
-### Style anchors
+### Install and connect
 
-- Warm paper backgrounds and dark ink text
-- Risograph spot colors: vermilion, yellow, blue, indigo, violet, pink
-- Chunky outlines, offset registration, low-opacity halftone fields
-- Stamp labels, crop marks, poster-like bands
-- Transparent PNG sticker icons
-- Green-screen showcase mockups and transparent cutouts
-
-### Install
-
-Clone this repo into your Codex Skills directory:
+Native Codex Skill:
 
 ```bash
 cd ~/.codex/skills
 git clone https://github.com/qybaihe/risograph-website.git
 ```
 
-Then ask Codex:
+Claude Code / Claude:
 
-```text
-Use risograph-website to transform this website into a modern retro Risograph print style. Pick icons from the bundled library and preserve the existing functionality.
+```bash
+git clone https://github.com/qybaihe/risograph-website.git
 ```
 
+Merge `adapters/CLAUDE.md` into your target project's `CLAUDE.md`, or ask Claude to read this repo's `SKILL.md`, `references/`, `assets/`, and `scripts/`.
+
+Cursor:
+
+```bash
+git clone https://github.com/qybaihe/risograph-website.git
+mkdir -p .cursor/rules
+cp risograph-website/adapters/cursor-rule.mdc .cursor/rules/risograph-website.mdc
+```
+
+Other AI IDEs:
+
+Use `adapters/generic-agent-prompt.md` as a system prompt or project rule, and expose this repository's resources to the agent.
+
 ### Quick usage
+
+Ask your agent:
+
+```text
+Use risograph-website to transform this website into a modern retro Risograph print style. Preserve existing functionality, choose semantically matched bundled icons, and generate a transparent showcase cutout.
+```
 
 Search for icons semantically:
 
@@ -204,27 +269,22 @@ python scripts/copy_icons.py \
   --manifest
 ```
 
-Build the icon manifest:
+Remove the green-screen background:
 
 ```bash
-python scripts/build_icon_manifest.py
+python scripts/remove_chroma_key.py \
+  --input ./showcase-green.png \
+  --out ./showcase-transparent.png \
+  --auto-key border \
+  --soft-matte \
+  --transparent-threshold 12 \
+  --opaque-threshold 220 \
+  --despill
 ```
 
-### Green-screen showcase cutouts
-
-`references/showcase-cutout.md` defines a repeatable workflow: package a website screenshot as a Risograph-styled green-screen showcase image, then remove the chroma-key background into a transparent PNG.
-
-This is useful for:
-
-- Website hero visuals
-- Newsletter or WeChat article images
-- App Store screenshots
-- Pitch decks and presentations
-- Social media launch graphics
-
-The key rule: keep the background pure `#00ff00`, never use green inside the subject, leave generous padding, and validate transparent corners after removal.
-
 ### Guardrails
+
+A good Risograph website should feel like printed software: tactile, memorable, and still easy to use.
 
 Avoid:
 
@@ -233,8 +293,6 @@ Avoid:
 - Low-contrast text on spot-color fields
 - Decorations covering buttons, navigation, or screenshots
 - Turning dashboards into posters at the cost of scanability
-
-A good Risograph website should feel like printed software: tactile, memorable, and still easy to use.
 
 ## License
 

@@ -1,11 +1,13 @@
 ---
 name: risograph-website
-description: "Transform existing or new websites, web apps, landing pages, dashboards, UI prototypes, and site showcase mockups into a retro Risograph print style. Use when Codex is asked to make a site Risograph, retro print, screen-print, zine-like, halftone, misregistered spot-color, vintage poster, or to package a website into a transparent green-screen cutout showcase using the bundled Risograph icon library."
+description: "Transform existing or new websites, web apps, landing pages, dashboards, UI prototypes, and site showcase mockups into a retro Risograph print style. Use when an AI coding agent or AI IDE is asked to make a site Risograph, retro print, screen-print, zine-like, halftone, misregistered spot-color, vintage poster, or to package a website into a transparent green-screen cutout showcase using the bundled Risograph icon library. Works as a Codex Skill and as a portable asset/rule pack for Claude Code, Cursor, and similar AI IDEs."
 ---
 
 # Risograph Website
 
 Use this skill to restyle a website into a product-grade retro Risograph print experience while preserving its product logic, information architecture, accessibility, and core interactions.
+
+This package is portable. In Codex it can be installed as a native Skill; in Claude Code, Cursor, and other AI IDEs it can be used as a rule/context package through the templates in `adapters/`.
 
 ## Core Workflow
 

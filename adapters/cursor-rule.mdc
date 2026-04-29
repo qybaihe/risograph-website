@@ -1,0 +1,21 @@
+---
+description: Apply the Risograph Website style system to websites, web apps, dashboards, prototypes, and showcase mockups.
+globs:
+alwaysApply: false
+---
+
+When the user asks for Risograph, retro print, screen-print, zine-like, halftone, misregistered spot-color, vintage poster, or transparent green-screen website showcase work, use the local `risograph-website` package as the style authority.
+
+Read `risograph-website/SKILL.md` first. Load only the reference files needed for the current task:
+
+- `references/visual-system.md` for visual tokens and style rules.
+- `references/transformation-prompt.md` for website redesign planning.
+- `references/icon-usage.md` before selecting or copying icons.
+- `references/showcase-cutout.md` for green-screen or transparent showcase output.
+- `references/website-patterns.md` for page-type guidance.
+
+Use `scripts/select_icons.py` for semantic icon search, `scripts/copy_icons.py` to copy selected transparent PNG icons into the target project, and `scripts/remove_chroma_key.py` to remove a flat green background from showcase images.
+
+Preserve the target site's information architecture, functionality, accessibility, and primary interactions. Apply Risograph as a product-grade visual system: warm paper surfaces, dark ink, limited spot colors, chunky outlines, slight misregistration, halftone texture, and controlled poster-like hierarchy.
+
+Avoid fake aged paper, low contrast, texture over small text, decorative marks over controls, and dashboard layouts that become harder to scan.

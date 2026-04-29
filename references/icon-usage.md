@@ -21,7 +21,7 @@ Use `scripts/select_icons.py` for quick matching. It searches slug, name, catego
 
 ## Copying
 
-Copy icons into the target project; do not reference `~/.codex/skills/...` from runtime code.
+Copy icons into the target project; do not reference the source skill/package folder from runtime code. The source may live in `~/.codex/skills/...`, a cloned `risograph-website/` folder, or another AI IDE workspace path.
 
 Common destinations:
 
