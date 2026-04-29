@@ -1,0 +1,5 @@
+interface:
+  display_name: "Risograph Website"
+  short_description: "Transform websites into retro Risograph print style."
+  brand_color: "#F05242"
+  default_prompt: "Use $risograph-website to transform this website into a retro Risograph print style."

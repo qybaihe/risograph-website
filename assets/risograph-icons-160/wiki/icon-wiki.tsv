@@ -1,0 +1,161 @@
+slug	name	category	sheet	slot	description	use_when	icon_path
+success-check	success check	核心状态	01-core-status	1	round seal badge with a large check mark, red and yellow offset ink		icons/success-check.png
+error-cross	error cross	核心状态	01-core-status	2	round badge with a bold cross, indigo outline and coral fill		icons/error-cross.png
+warning-triangle	warning triangle	核心状态	01-core-status	3	chunky warning triangle with one simple exclamation mark		icons/warning-triangle.png
+info-dot	info dot	核心状态	01-core-status	4	round info badge with one small abstract info mark		icons/info-dot.png
+plus-circle	plus circle	核心状态	01-core-status	5	circular add badge with a large plus		icons/plus-circle.png
+minus-circle	minus circle	核心状态	01-core-status	6	circular remove badge with a large minus		icons/minus-circle.png
+question-help	question help	核心状态	01-core-status	7	hand-cut question mark in a soft circle		icons/question-help.png
+sparkle-star	sparkle star	核心状态	01-core-status	8	four-point star with offset yellow and red layers		icons/sparkle-star.png
+heart	heart	核心状态	01-core-status	9	simple heart with coral fill and red misregistration edge		icons/heart.png
+star-badge	star badge	核心状态	01-core-status	10	award star inside an irregular seal circle		icons/star-badge.png
+flame	flame	核心状态	01-core-status	11	small flame with red and yellow spot colors		icons/flame.png
+lightning	lightning	核心状态	01-core-status	12	lightning bolt with rough ink grain		icons/lightning.png
+eye	eye	核心状态	01-core-status	13	almond eye with indigo pupil and blue offset fill		icons/eye.png
+hidden-eye	hidden eye	核心状态	01-core-status	14	eye crossed by one diagonal stroke		icons/hidden-eye.png
+empty-box	empty box	核心状态	01-core-status	15	open box with two tiny paper scraps		icons/empty-box.png
+loading-swirl	loading swirl	核心状态	01-core-status	16	circular hand-printed motion swirl		icons/loading-swirl.png
+home	home	导航控制	02-navigation-controls	1	simple house with offset roof layer		icons/home.png
+menu-lines	menu lines	导航控制	02-navigation-controls	2	three thick rounded menu bars		icons/menu-lines.png
+search	search	导航控制	02-navigation-controls	3	magnifying glass with a blue lens and red offset handle		icons/search.png
+settings-gear	settings gear	导航控制	02-navigation-controls	4	chunky gear with yellow center		icons/settings-gear.png
+user-avatar	user avatar	导航控制	02-navigation-controls	5	simple avatar in a circular badge		icons/user-avatar.png
+bell	bell	导航控制	02-navigation-controls	6	notification bell with small clapper		icons/bell.png
+bookmark	bookmark	导航控制	02-navigation-controls	7	folded bookmark with paper texture inside		icons/bookmark.png
+filter-funnel	filter funnel	导航控制	02-navigation-controls	8	funnel with three settling ink dots		icons/filter-funnel.png
+dashboard	dashboard	导航控制	02-navigation-controls	9	small panel with three chunky blocks		icons/dashboard.png
+grid	grid	导航控制	02-navigation-controls	10	four app tiles with different spot colors		icons/grid.png
+list	list	导航控制	02-navigation-controls	11	three rows with dot bullets		icons/list.png
+tabs	tabs	导航控制	02-navigation-controls	12	two overlapping folder-like tabs		icons/tabs.png
+sidebar	sidebar	导航控制	02-navigation-controls	13	browser window with side rail		icons/sidebar.png
+cursor-click	cursor click	导航控制	02-navigation-controls	14	mouse cursor with one click burst		icons/cursor-click.png
+sliders	sliders	导航控制	02-navigation-controls	15	three slider rails with offset knobs		icons/sliders.png
+expand	expand	导航控制	02-navigation-controls	16	four outward corner arrows		icons/expand.png
+arrow-up	arrow up	方向动作	03-arrows-actions	1	thick upward arrow		icons/arrow-up.png
+arrow-down	arrow down	方向动作	03-arrows-actions	2	thick downward arrow		icons/arrow-down.png
+arrow-left	arrow left	方向动作	03-arrows-actions	3	thick left arrow with offset shadow ink		icons/arrow-left.png
+arrow-right	arrow right	方向动作	03-arrows-actions	4	thick right arrow with offset shadow ink		icons/arrow-right.png
+share	share	方向动作	03-arrows-actions	5	arrow leaving a small square		icons/share.png
+refresh	refresh	方向动作	03-arrows-actions	6	two loop arrows with ink gaps		icons/refresh.png
+undo	undo	方向动作	03-arrows-actions	7	curved arrow turning left		icons/undo.png
+redo	redo	方向动作	03-arrows-actions	8	curved arrow turning right		icons/redo.png
+send	send	方向动作	03-arrows-actions	9	folded paper plane with ink trail		icons/send.png
+swap	swap	方向动作	03-arrows-actions	10	two opposing arrows crossing		icons/swap.png
+drag	drag	方向动作	03-arrows-actions	11	six-dot handle with a small hand-cut grip mark		icons/drag.png
+external-link	external link	方向动作	03-arrows-actions	12	square with arrow to upper right		icons/external-link.png
+maximize	maximize	方向动作	03-arrows-actions	13	four outward corner brackets		icons/maximize.png
+minimize	minimize	方向动作	03-arrows-actions	14	four inward corner brackets		icons/minimize.png
+sort	sort	方向动作	03-arrows-actions	15	up-down arrows beside short bars		icons/sort.png
+shuffle	shuffle	方向动作	03-arrows-actions	16	two crossing arrows with dot endpoints		icons/shuffle.png
+document	document	内容文件	04-content-files	1	single paper page with folded corner		icons/document.png
+folder	folder	内容文件	04-content-files	2	open folder with rough printed tab		icons/folder.png
+note	note	内容文件	04-content-files	3	pinned note card with small dot pin		icons/note.png
+calendar	calendar	内容文件	04-content-files	4	calendar card with abstract date dots		icons/calendar.png
+clipboard	clipboard	内容文件	04-content-files	5	clipboard with one check mark		icons/clipboard.png
+tag	tag	内容文件	04-content-files	6	hanging tag with round punch hole		icons/tag.png
+trash	trash	内容文件	04-content-files	7	trash can with two flying scraps		icons/trash.png
+archive-box	archive box	内容文件	04-content-files	8	storage box with a paper sheet peeking out		icons/archive-box.png
+book	book	内容文件	04-content-files	9	closed book with offset spine		icons/book.png
+newspaper	newspaper	内容文件	04-content-files	10	folded news sheet with unreadable bars		icons/newspaper.png
+receipt	receipt	内容文件	04-content-files	11	torn receipt with short unreadable lines		icons/receipt.png
+certificate	certificate	内容文件	04-content-files	12	certificate paper with round seal		icons/certificate.png
+copy	copy	内容文件	04-content-files	13	two overlapping sheets		icons/copy.png
+attachment	attachment	内容文件	04-content-files	14	paperclip on a small page		icons/attachment.png
+download-file	download file	内容文件	04-content-files	15	document with downward arrow		icons/download-file.png
+upload-file	upload file	内容文件	04-content-files	16	document with upward arrow		icons/upload-file.png
+image-frame	image frame	媒体创作	05-media-creative	1	picture frame with tiny sun and mountain shapes		icons/image-frame.png
+play	play	媒体创作	05-media-creative	2	circular play button		icons/play.png
+pause	pause	媒体创作	05-media-creative	3	circular pause button		icons/pause.png
+camera	camera	媒体创作	05-media-creative	4	compact camera with offset lens		icons/camera.png
+microphone	microphone	媒体创作	05-media-creative	5	microphone with two sound arcs		icons/microphone.png
+music-note	music note	媒体创作	05-media-creative	6	musical note with small printed dots		icons/music-note.png
+palette	palette	媒体创作	05-media-creative	7	paint palette with three spot-color blobs		icons/palette.png
+magic-wand	magic wand	媒体创作	05-media-creative	8	wand with two stars and ink speckles		icons/magic-wand.png
+brush	brush	媒体创作	05-media-creative	9	diagonal brush leaving a rough stroke		icons/brush.png
+crop	crop	媒体创作	05-media-creative	10	four crop corners over a small page		icons/crop.png
+layers	layers	媒体创作	05-media-creative	11	three stacked printed sheets		icons/layers.png
+volume	volume	媒体创作	05-media-creative	12	speaker with two sound waves		icons/volume.png
+headphones	headphones	媒体创作	05-media-creative	13	headphones with chunky ear pads		icons/headphones.png
+record	record	媒体创作	05-media-creative	14	record dot inside a ring		icons/record.png
+stop	stop	媒体创作	05-media-creative	15	square stop button in a rounded badge		icons/stop.png
+sparkle-edit	sparkle edit	媒体创作	05-media-creative	16	small brush with star burst		icons/sparkle-edit.png
+chat	chat	沟通社交	06-communication-social	1	speech bubble with offset fill		icons/chat.png
+mail	mail	沟通社交	06-communication-social	2	envelope with seal dot		icons/mail.png
+phone	phone	沟通社交	06-communication-social	3	handset with two signal arcs		icons/phone.png
+team	team	沟通社交	06-communication-social	4	three simple avatar dots grouped together		icons/team.png
+handshake	handshake	沟通社交	06-communication-social	5	two simplified hands meeting		icons/handshake.png
+megaphone	megaphone	沟通社交	06-communication-social	6	megaphone with printed sound bursts		icons/megaphone.png
+comment	comment	沟通社交	06-communication-social	7	rectangular comment bubble		icons/comment.png
+link	link	沟通社交	06-communication-social	8	two chain links		icons/link.png
+video-call	video call	沟通社交	06-communication-social	9	video window with small camera tab		icons/video-call.png
+user-add	user add	沟通社交	06-communication-social	10	avatar with plus badge		icons/user-add.png
+user-check	user check	沟通社交	06-communication-social	11	avatar with check badge		icons/user-check.png
+at-sign	at sign	沟通社交	06-communication-social	12	hand-drawn at symbol, icon-like not typography-heavy		icons/at-sign.png
+hashtag	hashtag	沟通社交	06-communication-social	13	chunky hashtag mark with dot accents		icons/hashtag.png
+support	support	沟通社交	06-communication-social	14	headset avatar		icons/support.png
+broadcast	broadcast	沟通社交	06-communication-social	15	central dot with two radiating arcs		icons/broadcast.png
+community	community	沟通社交	06-communication-social	16	three speech bubbles forming a loose circle		icons/community.png
+cart	cart	商业数据	07-commerce-data	1	shopping cart with two printed wheels		icons/cart.png
+credit-card	credit card	商业数据	07-commerce-data	2	payment card with chip blocks, no numbers		icons/credit-card.png
+gift	gift	商业数据	07-commerce-data	3	gift box with ribbon		icons/gift.png
+ticket	ticket	商业数据	07-commerce-data	4	ticket with punched side circles		icons/ticket.png
+badge	badge	商业数据	07-commerce-data	5	medal badge with star center		icons/badge.png
+chart-up	chart up	商业数据	07-commerce-data	6	rising chart line over chunky bars		icons/chart-up.png
+target	target	商业数据	07-commerce-data	7	target rings with a small arrow		icons/target.png
+flag	flag	商业数据	07-commerce-data	8	milestone flag on a pole		icons/flag.png
+wallet	wallet	商业数据	07-commerce-data	9	wallet with one coin peeking out		icons/wallet.png
+coin	coin	商业数据	07-commerce-data	10	coin with small star mark		icons/coin.png
+bag	bag	商业数据	07-commerce-data	11	shopping bag with handle		icons/bag.png
+discount	discount	商业数据	07-commerce-data	12	percent mark on a tag shape		icons/discount.png
+package-box	package box	商业数据	07-commerce-data	13	shipping box with tape		icons/package-box.png
+truck	truck	商业数据	07-commerce-data	14	delivery truck with simple cargo box		icons/truck.png
+diamond	diamond	商业数据	07-commerce-data	15	faceted gem with offset blue and violet layers		icons/diamond.png
+storefront	storefront	商业数据	07-commerce-data	16	small storefront with striped awning		icons/storefront.png
+clock	clock	时间地点	08-time-place	1	round clock with printed hands		icons/clock.png
+hourglass	hourglass	时间地点	08-time-place	2	hourglass with grainy sand dots		icons/hourglass.png
+map-pin	map pin	时间地点	08-time-place	3	location pin with inner dot		icons/map-pin.png
+map	map	时间地点	08-time-place	4	folded map with curved route line		icons/map.png
+compass	compass	时间地点	08-time-place	5	compass with sharp needle		icons/compass.png
+globe	globe	时间地点	08-time-place	6	globe with two latitude curves		icons/globe.png
+rocket	rocket	时间地点	08-time-place	7	rocket with tiny flame		icons/rocket.png
+route-path	route path	时间地点	08-time-place	8	curved route connecting two pins		icons/route-path.png
+timer	timer	时间地点	08-time-place	9	stopwatch with top button		icons/timer.png
+calendar-clock	calendar clock	时间地点	08-time-place	10	calendar card plus small clock		icons/calendar-clock.png
+building	building	时间地点	08-time-place	11	simple city building with windows		icons/building.png
+car	car	时间地点	08-time-place	12	small car with round wheels		icons/car.png
+train	train	时间地点	08-time-place	13	train front with two track lines		icons/train.png
+location-target	location target	时间地点	08-time-place	14	target rings with location dot		icons/location-target.png
+flag-pin	flag pin	时间地点	08-time-place	15	flag planted inside a pin		icons/flag-pin.png
+signpost	signpost	时间地点	08-time-place	16	two directional sign arrows		icons/signpost.png
+terminal	terminal	科技安全	09-tech-security	1	command window with abstract prompt block, no readable text		icons/terminal.png
+code	code	科技安全	09-tech-security	2	angle bracket shapes with small dot		icons/code.png
+database	database	科技安全	09-tech-security	3	stacked database cylinder		icons/database.png
+cloud	cloud	科技安全	09-tech-security	4	cloud with sync dot		icons/cloud.png
+wifi	wifi	科技安全	09-tech-security	5	wireless arcs around a dot		icons/wifi.png
+lock	lock	科技安全	09-tech-security	6	padlock with keyhole		icons/lock.png
+shield-check	shield check	科技安全	09-tech-security	7	shield with simple check		icons/shield-check.png
+chip	chip	科技安全	09-tech-security	8	square chip with small pins		icons/chip.png
+server	server	科技安全	09-tech-security	9	two stacked server blocks with lights		icons/server.png
+robot	robot	科技安全	09-tech-security	10	friendly simple robot head		icons/robot.png
+key	key	科技安全	09-tech-security	11	old key with round bow		icons/key.png
+fingerprint	fingerprint	科技安全	09-tech-security	12	curved fingerprint strokes		icons/fingerprint.png
+mobile	mobile	科技安全	09-tech-security	13	smartphone with blank screen		icons/mobile.png
+desktop	desktop	科技安全	09-tech-security	14	monitor with short stand		icons/desktop.png
+encrypted-file	encrypted file	科技安全	09-tech-security	15	page with small lock badge		icons/encrypted-file.png
+backup-vault	backup vault	科技安全	09-tech-security	16	rounded vault with stacked papers		icons/backup-vault.png
+coffee-cup	coffee cup	生活装饰	10-life-decor-lively	1	takeaway coffee cup with steam curls		icons/coffee-cup.png
+bowl	bowl	生活装饰	10-life-decor-lively	2	bowl with short chopstick-like strokes		icons/bowl.png
+apple	apple	生活装饰	10-life-decor-lively	3	apple with one leaf		icons/apple.png
+pill	pill	生活装饰	10-life-decor-lively	4	two capsule pills		icons/pill.png
+first-aid	first aid	生活装饰	10-life-decor-lively	5	first-aid kit with simple cross		icons/first-aid.png
+plant-pot	plant pot	生活装饰	10-life-decor-lively	6	small plant in a pot		icons/plant-pot.png
+leaf	leaf	生活装饰	10-life-decor-lively	7	single leaf with rough ink vein		icons/leaf.png
+mountain	mountain	生活装饰	10-life-decor-lively	8	two layered mountain shapes		icons/mountain.png
+wave	wave	生活装饰	10-life-decor-lively	9	bold wave with two droplets		icons/wave.png
+flower	flower	生活装饰	10-life-decor-lively	10	five-petal flower		icons/flower.png
+ribbon	ribbon	生活装饰	10-life-decor-lively	11	flowing ribbon strip		icons/ribbon.png
+confetti	confetti	生活装饰	10-life-decor-lively	12	small burst of dots and paper bits		icons/confetti.png
+burst	burst	生活装饰	10-life-decor-lively	13	comic-like starburst		icons/burst.png
+spiral	spiral	生活装饰	10-life-decor-lively	14	loose spiral with misregistered edge		icons/spiral.png
+tape	tape	生活装饰	10-life-decor-lively	15	crossed tape strips		icons/tape.png
+ink-splash	ink splash	生活装饰	10-life-decor-lively	16	controlled splash with scattered dots		icons/ink-splash.png

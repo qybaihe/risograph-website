@@ -1,0 +1,217 @@
+#!/usr/bin/env python3
+"""Slice a green-screen Memphis icon sheet into centered transparent PNG icons."""
+
+from __future__ import annotations
+
+import argparse
+import csv
+import math
+from pathlib import Path
+
+from PIL import Image, ImageFilter
+
+
+KEY = (0, 255, 0)
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--sheet", required=True, type=Path)
+    parser.add_argument("--sheet-id", required=True)
+    parser.add_argument("--wiki", required=True, type=Path)
+    parser.add_argument("--out-dir", required=True, type=Path)
+    parser.add_argument("--cols", type=int, default=4)
+    parser.add_argument("--rows", type=int, default=2)
+    parser.add_argument("--size", type=int, default=512)
+    parser.add_argument("--padding", type=int, default=48)
+    parser.add_argument("--cell-margin-ratio", type=float, default=0.015)
+    parser.add_argument("--transparent-threshold", type=float, default=32)
+    parser.add_argument("--opaque-threshold", type=float, default=165)
+    parser.add_argument("--edge-contract", type=int, default=0)
+    parser.add_argument("--edge-feather", type=float, default=0)
+    parser.add_argument("--min-component-area", type=int, default=18)
+    parser.add_argument("--edge-artifact-area", type=int, default=4000)
+    parser.add_argument("--edge-artifact-margin", type=int, default=3)
+    return parser.parse_args()
+
+
+def read_rows(wiki: Path, sheet_id: str, expected: int) -> list[dict[str, str]]:
+    with wiki.open("r", encoding="utf-8", newline="") as fh:
+        rows = [row for row in csv.DictReader(fh, delimiter="\t") if row["sheet"] == sheet_id]
+    rows.sort(key=lambda row: int(row["slot"]))
+    if len(rows) != expected:
+        raise SystemExit(f"Expected {expected} wiki rows for {sheet_id}, found {len(rows)}")
+    return rows
+
+
+def distance_to_key(r: int, g: int, b: int) -> float:
+    return math.sqrt((r - KEY[0]) ** 2 + (g - KEY[1]) ** 2 + (b - KEY[2]) ** 2)
+
+
+def remove_green(image: Image.Image, transparent: float, opaque: float) -> Image.Image:
+    rgba = image.convert("RGBA")
+    pixels = rgba.load()
+    width, height = rgba.size
+
+    for y in range(height):
+        for x in range(width):
+            r, g, b, a = pixels[x, y]
+            distance = distance_to_key(r, g, b)
+            if distance <= transparent:
+                pixels[x, y] = (r, g, b, 0)
+            elif distance < opaque:
+                alpha = int(255 * ((distance - transparent) / (opaque - transparent)))
+                # Despill the green edge without changing the icon's saturated palette too much.
+                pixels[x, y] = (r, min(g, max(r, b) + 18), b, min(a, alpha))
+            else:
+                pixels[x, y] = (r, g, b, a)
+    return rgba
+
+
+def polish_alpha(image: Image.Image, edge_contract: int, edge_feather: float) -> Image.Image:
+    if edge_contract <= 0 and edge_feather <= 0:
+        return image
+    rgba = image.convert("RGBA")
+    r, g, b, a = rgba.split()
+    if edge_contract > 0:
+        for _ in range(edge_contract):
+            a = a.filter(ImageFilter.MinFilter(3))
+    if edge_feather > 0:
+        a = a.filter(ImageFilter.GaussianBlur(edge_feather))
+    rgba.putalpha(a)
+    return rgba
+
+
+def clean_alpha_components(
+    image: Image.Image,
+    min_area: int,
+    edge_artifact_area: int,
+    edge_artifact_margin: int,
+) -> Image.Image:
+    """Remove tiny flecks and narrow edge leftovers before bbox centering."""
+    rgba = image.convert("RGBA")
+    alpha = rgba.getchannel("A")
+    pixels = alpha.load()
+    width, height = alpha.size
+    seen: set[tuple[int, int]] = set()
+    components: list[tuple[int, tuple[int, int, int, int], list[tuple[int, int]]]] = []
+
+    for y in range(height):
+        for x in range(width):
+            if not pixels[x, y] or (x, y) in seen:
+                continue
+            stack = [(x, y)]
+            seen.add((x, y))
+            component: list[tuple[int, int]] = []
+            xs: list[int] = []
+            ys: list[int] = []
+
+            while stack:
+                cx, cy = stack.pop()
+                component.append((cx, cy))
+                xs.append(cx)
+                ys.append(cy)
+                for nx in (cx - 1, cx, cx + 1):
+                    for ny in (cy - 1, cy, cy + 1):
+                        if 0 <= nx < width and 0 <= ny < height and (nx, ny) not in seen and pixels[nx, ny]:
+                            seen.add((nx, ny))
+                            stack.append((nx, ny))
+
+            area = len(component)
+            left, top, right, bottom = min(xs), min(ys), max(xs) + 1, max(ys) + 1
+            touches_edge = (
+                left <= edge_artifact_margin
+                or top <= edge_artifact_margin
+                or right >= width - edge_artifact_margin
+                or bottom >= height - edge_artifact_margin
+            )
+
+            components.append((area, (left, top, right, bottom), component))
+
+    if not components:
+        return rgba
+
+    largest_area, _, largest_component = max(components, key=lambda item: item[0])
+    largest_id = id(largest_component)
+    remove: list[tuple[int, int]] = []
+    for area, (left, top, right, bottom), component in components:
+        touches_edge = (
+            left <= edge_artifact_margin
+            or top <= edge_artifact_margin
+            or right >= width - edge_artifact_margin
+            or bottom >= height - edge_artifact_margin
+        )
+        small_edge_piece = touches_edge and id(component) != largest_id and area < max(edge_artifact_area, largest_area * 0.35)
+        if area < min_area or small_edge_piece:
+            remove.extend(component)
+
+    if not remove:
+        return rgba
+
+    data = rgba.load()
+    for x, y in remove:
+        data[x, y] = (0, 0, 0, 0)
+    return rgba
+
+
+def square_icon(image: Image.Image, size: int, padding: int) -> Image.Image:
+    alpha = image.getchannel("A")
+    bbox = alpha.getbbox()
+    if not bbox:
+        raise ValueError("No non-transparent pixels found")
+
+    left, top, right, bottom = bbox
+    pad = max(8, int(min(image.size) * 0.035))
+    left = max(0, left - pad)
+    top = max(0, top - pad)
+    right = min(image.width, right + pad)
+    bottom = min(image.height, bottom + pad)
+
+    cropped = image.crop((left, top, right, bottom))
+    max_subject = size - padding * 2
+    scale = min(max_subject / cropped.width, max_subject / cropped.height)
+    resized = cropped.resize((round(cropped.width * scale), round(cropped.height * scale)), Image.Resampling.LANCZOS)
+
+    canvas = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+    canvas.alpha_composite(resized, ((size - resized.width) // 2, (size - resized.height) // 2))
+    return canvas
+
+
+def main() -> None:
+    args = parse_args()
+    expected = args.cols * args.rows
+    rows = read_rows(args.wiki, args.sheet_id, expected)
+    sheet = Image.open(args.sheet).convert("RGB")
+    cell_w = sheet.width // args.cols
+    cell_h = sheet.height // args.rows
+    margin_x = round(cell_w * args.cell_margin_ratio)
+    margin_y = round(cell_h * args.cell_margin_ratio)
+    args.out_dir.mkdir(parents=True, exist_ok=True)
+
+    for row in rows:
+        slot = int(row["slot"])
+        col = (slot - 1) % args.cols
+        row_index = (slot - 1) // args.cols
+        crop = sheet.crop(
+            (
+                col * cell_w + margin_x,
+                row_index * cell_h + margin_y,
+                (col + 1) * cell_w - margin_x,
+                (row_index + 1) * cell_h - margin_y,
+            )
+        )
+        transparent = remove_green(crop, args.transparent_threshold, args.opaque_threshold)
+        transparent = polish_alpha(transparent, args.edge_contract, args.edge_feather)
+        transparent = clean_alpha_components(
+            transparent,
+            args.min_component_area,
+            args.edge_artifact_area,
+            args.edge_artifact_margin,
+        )
+        icon = square_icon(transparent, args.size, args.padding)
+        icon.save(args.out_dir / f"{row['slug']}.png")
+        print(f"wrote {row['slug']}.png")
+
+
+if __name__ == "__main__":
+    main()

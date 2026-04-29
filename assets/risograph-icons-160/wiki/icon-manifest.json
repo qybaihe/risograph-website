@@ -1,0 +1,1618 @@
+{
+  "name": "risograph-icons-160",
+  "count": 160,
+  "icons": [
+    {
+      "slug": "success-check",
+      "name": "success check",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "1",
+      "description": "round seal badge with a large check mark, red and yellow offset ink",
+      "use_when": "",
+      "icon_path": "icons/success-check.png"
+    },
+    {
+      "slug": "error-cross",
+      "name": "error cross",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "2",
+      "description": "round badge with a bold cross, indigo outline and coral fill",
+      "use_when": "",
+      "icon_path": "icons/error-cross.png"
+    },
+    {
+      "slug": "warning-triangle",
+      "name": "warning triangle",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "3",
+      "description": "chunky warning triangle with one simple exclamation mark",
+      "use_when": "",
+      "icon_path": "icons/warning-triangle.png"
+    },
+    {
+      "slug": "info-dot",
+      "name": "info dot",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "4",
+      "description": "round info badge with one small abstract info mark",
+      "use_when": "",
+      "icon_path": "icons/info-dot.png"
+    },
+    {
+      "slug": "plus-circle",
+      "name": "plus circle",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "5",
+      "description": "circular add badge with a large plus",
+      "use_when": "",
+      "icon_path": "icons/plus-circle.png"
+    },
+    {
+      "slug": "minus-circle",
+      "name": "minus circle",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "6",
+      "description": "circular remove badge with a large minus",
+      "use_when": "",
+      "icon_path": "icons/minus-circle.png"
+    },
+    {
+      "slug": "question-help",
+      "name": "question help",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "7",
+      "description": "hand-cut question mark in a soft circle",
+      "use_when": "",
+      "icon_path": "icons/question-help.png"
+    },
+    {
+      "slug": "sparkle-star",
+      "name": "sparkle star",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "8",
+      "description": "four-point star with offset yellow and red layers",
+      "use_when": "",
+      "icon_path": "icons/sparkle-star.png"
+    },
+    {
+      "slug": "heart",
+      "name": "heart",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "9",
+      "description": "simple heart with coral fill and red misregistration edge",
+      "use_when": "",
+      "icon_path": "icons/heart.png"
+    },
+    {
+      "slug": "star-badge",
+      "name": "star badge",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "10",
+      "description": "award star inside an irregular seal circle",
+      "use_when": "",
+      "icon_path": "icons/star-badge.png"
+    },
+    {
+      "slug": "flame",
+      "name": "flame",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "11",
+      "description": "small flame with red and yellow spot colors",
+      "use_when": "",
+      "icon_path": "icons/flame.png"
+    },
+    {
+      "slug": "lightning",
+      "name": "lightning",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "12",
+      "description": "lightning bolt with rough ink grain",
+      "use_when": "",
+      "icon_path": "icons/lightning.png"
+    },
+    {
+      "slug": "eye",
+      "name": "eye",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "13",
+      "description": "almond eye with indigo pupil and blue offset fill",
+      "use_when": "",
+      "icon_path": "icons/eye.png"
+    },
+    {
+      "slug": "hidden-eye",
+      "name": "hidden eye",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "14",
+      "description": "eye crossed by one diagonal stroke",
+      "use_when": "",
+      "icon_path": "icons/hidden-eye.png"
+    },
+    {
+      "slug": "empty-box",
+      "name": "empty box",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "15",
+      "description": "open box with two tiny paper scraps",
+      "use_when": "",
+      "icon_path": "icons/empty-box.png"
+    },
+    {
+      "slug": "loading-swirl",
+      "name": "loading swirl",
+      "category": "核心状态",
+      "sheet": "01-core-status",
+      "slot": "16",
+      "description": "circular hand-printed motion swirl",
+      "use_when": "",
+      "icon_path": "icons/loading-swirl.png"
+    },
+    {
+      "slug": "home",
+      "name": "home",
+      "category": "导航控制",
+      "sheet": "02-navigation-controls",
+      "slot": "1",
+      "description": "simple house with offset roof layer",
+      "use_when": "",
+      "icon_path": "icons/home.png"
+    },
+    {
+      "slug": "menu-lines",
+      "name": "menu lines",
+      "category": "导航控制",
+      "sheet": "02-navigation-controls",
+      "slot": "2",
+      "description": "three thick rounded menu bars",
+      "use_when": "",
+      "icon_path": "icons/menu-lines.png"
+    },
+    {
+      "slug": "search",
+      "name": "search",
+      "category": "导航控制",
+      "sheet": "02-navigation-controls",
+      "slot": "3",
+      "description": "magnifying glass with a blue lens and red offset handle",
+      "use_when": "",
+      "icon_path": "icons/search.png"
+    },
+    {
+      "slug": "settings-gear",
+      "name": "settings gear",
+      "category": "导航控制",
+      "sheet": "02-navigation-controls",
+      "slot": "4",
+      "description": "chunky gear with yellow center",
+      "use_when": "",
+      "icon_path": "icons/settings-gear.png"
+    },
+    {
+      "slug": "user-avatar",
+      "name": "user avatar",
+      "category": "导航控制",
+      "sheet": "02-navigation-controls",
+      "slot": "5",
+      "description": "simple avatar in a circular badge",
+      "use_when": "",
+      "icon_path": "icons/user-avatar.png"
+    },
+    {
+      "slug": "bell",
+      "name": "bell",
+      "category": "导航控制",
+      "sheet": "02-navigation-controls",
+      "slot": "6",
+      "description": "notification bell with small clapper",
+      "use_when": "",
+      "icon_path": "icons/bell.png"
+    },
+    {
+      "slug": "bookmark",
+      "name": "bookmark",
+      "category": "导航控制",
+      "sheet": "02-navigation-controls",
+      "slot": "7",
+      "description": "folded bookmark with paper texture inside",
+      "use_when": "",
+      "icon_path": "icons/bookmark.png"
+    },
+    {
+      "slug": "filter-funnel",
+      "name": "filter funnel",
+      "category": "导航控制",
+      "sheet": "02-navigation-controls",
+      "slot": "8",
+      "description": "funnel with three settling ink dots",
+      "use_when": "",
+      "icon_path": "icons/filter-funnel.png"
+    },
+    {
+      "slug": "dashboard",
+      "name": "dashboard",
+      "category": "导航控制",
+      "sheet": "02-navigation-controls",
+      "slot": "9",
+      "description": "small panel with three chunky blocks",
+      "use_when": "",
+      "icon_path": "icons/dashboard.png"
+    },
+    {
+      "slug": "grid",
+      "name": "grid",
+      "category": "导航控制",
+      "sheet": "02-navigation-controls",
+      "slot": "10",
+      "description": "four app tiles with different spot colors",
+      "use_when": "",
+      "icon_path": "icons/grid.png"
+    },
+    {
+      "slug": "list",
+      "name": "list",
+      "category": "导航控制",
+      "sheet": "02-navigation-controls",
+      "slot": "11",
+      "description": "three rows with dot bullets",
+      "use_when": "",
+      "icon_path": "icons/list.png"
+    },
+    {
+      "slug": "tabs",
+      "name": "tabs",
+      "category": "导航控制",
+      "sheet": "02-navigation-controls",
+      "slot": "12",
+      "description": "two overlapping folder-like tabs",
+      "use_when": "",
+      "icon_path": "icons/tabs.png"
+    },
+    {
+      "slug": "sidebar",
+      "name": "sidebar",
+      "category": "导航控制",
+      "sheet": "02-navigation-controls",
+      "slot": "13",
+      "description": "browser window with side rail",
+      "use_when": "",
+      "icon_path": "icons/sidebar.png"
+    },
+    {
+      "slug": "cursor-click",
+      "name": "cursor click",
+      "category": "导航控制",
+      "sheet": "02-navigation-controls",
+      "slot": "14",
+      "description": "mouse cursor with one click burst",
+      "use_when": "",
+      "icon_path": "icons/cursor-click.png"
+    },
+    {
+      "slug": "sliders",
+      "name": "sliders",
+      "category": "导航控制",
+      "sheet": "02-navigation-controls",
+      "slot": "15",
+      "description": "three slider rails with offset knobs",
+      "use_when": "",
+      "icon_path": "icons/sliders.png"
+    },
+    {
+      "slug": "expand",
+      "name": "expand",
+      "category": "导航控制",
+      "sheet": "02-navigation-controls",
+      "slot": "16",
+      "description": "four outward corner arrows",
+      "use_when": "",
+      "icon_path": "icons/expand.png"
+    },
+    {
+      "slug": "arrow-up",
+      "name": "arrow up",
+      "category": "方向动作",
+      "sheet": "03-arrows-actions",
+      "slot": "1",
+      "description": "thick upward arrow",
+      "use_when": "",
+      "icon_path": "icons/arrow-up.png"
+    },
+    {
+      "slug": "arrow-down",
+      "name": "arrow down",
+      "category": "方向动作",
+      "sheet": "03-arrows-actions",
+      "slot": "2",
+      "description": "thick downward arrow",
+      "use_when": "",
+      "icon_path": "icons/arrow-down.png"
+    },
+    {
+      "slug": "arrow-left",
+      "name": "arrow left",
+      "category": "方向动作",
+      "sheet": "03-arrows-actions",
+      "slot": "3",
+      "description": "thick left arrow with offset shadow ink",
+      "use_when": "",
+      "icon_path": "icons/arrow-left.png"
+    },
+    {
+      "slug": "arrow-right",
+      "name": "arrow right",
+      "category": "方向动作",
+      "sheet": "03-arrows-actions",
+      "slot": "4",
+      "description": "thick right arrow with offset shadow ink",
+      "use_when": "",
+      "icon_path": "icons/arrow-right.png"
+    },
+    {
+      "slug": "share",
+      "name": "share",
+      "category": "方向动作",
+      "sheet": "03-arrows-actions",
+      "slot": "5",
+      "description": "arrow leaving a small square",
+      "use_when": "",
+      "icon_path": "icons/share.png"
+    },
+    {
+      "slug": "refresh",
+      "name": "refresh",
+      "category": "方向动作",
+      "sheet": "03-arrows-actions",
+      "slot": "6",
+      "description": "two loop arrows with ink gaps",
+      "use_when": "",
+      "icon_path": "icons/refresh.png"
+    },
+    {
+      "slug": "undo",
+      "name": "undo",
+      "category": "方向动作",
+      "sheet": "03-arrows-actions",
+      "slot": "7",
+      "description": "curved arrow turning left",
+      "use_when": "",
+      "icon_path": "icons/undo.png"
+    },
+    {
+      "slug": "redo",
+      "name": "redo",
+      "category": "方向动作",
+      "sheet": "03-arrows-actions",
+      "slot": "8",
+      "description": "curved arrow turning right",
+      "use_when": "",
+      "icon_path": "icons/redo.png"
+    },
+    {
+      "slug": "send",
+      "name": "send",
+      "category": "方向动作",
+      "sheet": "03-arrows-actions",
+      "slot": "9",
+      "description": "folded paper plane with ink trail",
+      "use_when": "",
+      "icon_path": "icons/send.png"
+    },
+    {
+      "slug": "swap",
+      "name": "swap",
+      "category": "方向动作",
+      "sheet": "03-arrows-actions",
+      "slot": "10",
+      "description": "two opposing arrows crossing",
+      "use_when": "",
+      "icon_path": "icons/swap.png"
+    },
+    {
+      "slug": "drag",
+      "name": "drag",
+      "category": "方向动作",
+      "sheet": "03-arrows-actions",
+      "slot": "11",
+      "description": "six-dot handle with a small hand-cut grip mark",
+      "use_when": "",
+      "icon_path": "icons/drag.png"
+    },
+    {
+      "slug": "external-link",
+      "name": "external link",
+      "category": "方向动作",
+      "sheet": "03-arrows-actions",
+      "slot": "12",
+      "description": "square with arrow to upper right",
+      "use_when": "",
+      "icon_path": "icons/external-link.png"
+    },
+    {
+      "slug": "maximize",
+      "name": "maximize",
+      "category": "方向动作",
+      "sheet": "03-arrows-actions",
+      "slot": "13",
+      "description": "four outward corner brackets",
+      "use_when": "",
+      "icon_path": "icons/maximize.png"
+    },
+    {
+      "slug": "minimize",
+      "name": "minimize",
+      "category": "方向动作",
+      "sheet": "03-arrows-actions",
+      "slot": "14",
+      "description": "four inward corner brackets",
+      "use_when": "",
+      "icon_path": "icons/minimize.png"
+    },
+    {
+      "slug": "sort",
+      "name": "sort",
+      "category": "方向动作",
+      "sheet": "03-arrows-actions",
+      "slot": "15",
+      "description": "up-down arrows beside short bars",
+      "use_when": "",
+      "icon_path": "icons/sort.png"
+    },
+    {
+      "slug": "shuffle",
+      "name": "shuffle",
+      "category": "方向动作",
+      "sheet": "03-arrows-actions",
+      "slot": "16",
+      "description": "two crossing arrows with dot endpoints",
+      "use_when": "",
+      "icon_path": "icons/shuffle.png"
+    },
+    {
+      "slug": "document",
+      "name": "document",
+      "category": "内容文件",
+      "sheet": "04-content-files",
+      "slot": "1",
+      "description": "single paper page with folded corner",
+      "use_when": "",
+      "icon_path": "icons/document.png"
+    },
+    {
+      "slug": "folder",
+      "name": "folder",
+      "category": "内容文件",
+      "sheet": "04-content-files",
+      "slot": "2",
+      "description": "open folder with rough printed tab",
+      "use_when": "",
+      "icon_path": "icons/folder.png"
+    },
+    {
+      "slug": "note",
+      "name": "note",
+      "category": "内容文件",
+      "sheet": "04-content-files",
+      "slot": "3",
+      "description": "pinned note card with small dot pin",
+      "use_when": "",
+      "icon_path": "icons/note.png"
+    },
+    {
+      "slug": "calendar",
+      "name": "calendar",
+      "category": "内容文件",
+      "sheet": "04-content-files",
+      "slot": "4",
+      "description": "calendar card with abstract date dots",
+      "use_when": "",
+      "icon_path": "icons/calendar.png"
+    },
+    {
+      "slug": "clipboard",
+      "name": "clipboard",
+      "category": "内容文件",
+      "sheet": "04-content-files",
+      "slot": "5",
+      "description": "clipboard with one check mark",
+      "use_when": "",
+      "icon_path": "icons/clipboard.png"
+    },
+    {
+      "slug": "tag",
+      "name": "tag",
+      "category": "内容文件",
+      "sheet": "04-content-files",
+      "slot": "6",
+      "description": "hanging tag with round punch hole",
+      "use_when": "",
+      "icon_path": "icons/tag.png"
+    },
+    {
+      "slug": "trash",
+      "name": "trash",
+      "category": "内容文件",
+      "sheet": "04-content-files",
+      "slot": "7",
+      "description": "trash can with two flying scraps",
+      "use_when": "",
+      "icon_path": "icons/trash.png"
+    },
+    {
+      "slug": "archive-box",
+      "name": "archive box",
+      "category": "内容文件",
+      "sheet": "04-content-files",
+      "slot": "8",
+      "description": "storage box with a paper sheet peeking out",
+      "use_when": "",
+      "icon_path": "icons/archive-box.png"
+    },
+    {
+      "slug": "book",
+      "name": "book",
+      "category": "内容文件",
+      "sheet": "04-content-files",
+      "slot": "9",
+      "description": "closed book with offset spine",
+      "use_when": "",
+      "icon_path": "icons/book.png"
+    },
+    {
+      "slug": "newspaper",
+      "name": "newspaper",
+      "category": "内容文件",
+      "sheet": "04-content-files",
+      "slot": "10",
+      "description": "folded news sheet with unreadable bars",
+      "use_when": "",
+      "icon_path": "icons/newspaper.png"
+    },
+    {
+      "slug": "receipt",
+      "name": "receipt",
+      "category": "内容文件",
+      "sheet": "04-content-files",
+      "slot": "11",
+      "description": "torn receipt with short unreadable lines",
+      "use_when": "",
+      "icon_path": "icons/receipt.png"
+    },
+    {
+      "slug": "certificate",
+      "name": "certificate",
+      "category": "内容文件",
+      "sheet": "04-content-files",
+      "slot": "12",
+      "description": "certificate paper with round seal",
+      "use_when": "",
+      "icon_path": "icons/certificate.png"
+    },
+    {
+      "slug": "copy",
+      "name": "copy",
+      "category": "内容文件",
+      "sheet": "04-content-files",
+      "slot": "13",
+      "description": "two overlapping sheets",
+      "use_when": "",
+      "icon_path": "icons/copy.png"
+    },
+    {
+      "slug": "attachment",
+      "name": "attachment",
+      "category": "内容文件",
+      "sheet": "04-content-files",
+      "slot": "14",
+      "description": "paperclip on a small page",
+      "use_when": "",
+      "icon_path": "icons/attachment.png"
+    },
+    {
+      "slug": "download-file",
+      "name": "download file",
+      "category": "内容文件",
+      "sheet": "04-content-files",
+      "slot": "15",
+      "description": "document with downward arrow",
+      "use_when": "",
+      "icon_path": "icons/download-file.png"
+    },
+    {
+      "slug": "upload-file",
+      "name": "upload file",
+      "category": "内容文件",
+      "sheet": "04-content-files",
+      "slot": "16",
+      "description": "document with upward arrow",
+      "use_when": "",
+      "icon_path": "icons/upload-file.png"
+    },
+    {
+      "slug": "image-frame",
+      "name": "image frame",
+      "category": "媒体创作",
+      "sheet": "05-media-creative",
+      "slot": "1",
+      "description": "picture frame with tiny sun and mountain shapes",
+      "use_when": "",
+      "icon_path": "icons/image-frame.png"
+    },
+    {
+      "slug": "play",
+      "name": "play",
+      "category": "媒体创作",
+      "sheet": "05-media-creative",
+      "slot": "2",
+      "description": "circular play button",
+      "use_when": "",
+      "icon_path": "icons/play.png"
+    },
+    {
+      "slug": "pause",
+      "name": "pause",
+      "category": "媒体创作",
+      "sheet": "05-media-creative",
+      "slot": "3",
+      "description": "circular pause button",
+      "use_when": "",
+      "icon_path": "icons/pause.png"
+    },
+    {
+      "slug": "camera",
+      "name": "camera",
+      "category": "媒体创作",
+      "sheet": "05-media-creative",
+      "slot": "4",
+      "description": "compact camera with offset lens",
+      "use_when": "",
+      "icon_path": "icons/camera.png"
+    },
+    {
+      "slug": "microphone",
+      "name": "microphone",
+      "category": "媒体创作",
+      "sheet": "05-media-creative",
+      "slot": "5",
+      "description": "microphone with two sound arcs",
+      "use_when": "",
+      "icon_path": "icons/microphone.png"
+    },
+    {
+      "slug": "music-note",
+      "name": "music note",
+      "category": "媒体创作",
+      "sheet": "05-media-creative",
+      "slot": "6",
+      "description": "musical note with small printed dots",
+      "use_when": "",
+      "icon_path": "icons/music-note.png"
+    },
+    {
+      "slug": "palette",
+      "name": "palette",
+      "category": "媒体创作",
+      "sheet": "05-media-creative",
+      "slot": "7",
+      "description": "paint palette with three spot-color blobs",
+      "use_when": "",
+      "icon_path": "icons/palette.png"
+    },
+    {
+      "slug": "magic-wand",
+      "name": "magic wand",
+      "category": "媒体创作",
+      "sheet": "05-media-creative",
+      "slot": "8",
+      "description": "wand with two stars and ink speckles",
+      "use_when": "",
+      "icon_path": "icons/magic-wand.png"
+    },
+    {
+      "slug": "brush",
+      "name": "brush",
+      "category": "媒体创作",
+      "sheet": "05-media-creative",
+      "slot": "9",
+      "description": "diagonal brush leaving a rough stroke",
+      "use_when": "",
+      "icon_path": "icons/brush.png"
+    },
+    {
+      "slug": "crop",
+      "name": "crop",
+      "category": "媒体创作",
+      "sheet": "05-media-creative",
+      "slot": "10",
+      "description": "four crop corners over a small page",
+      "use_when": "",
+      "icon_path": "icons/crop.png"
+    },
+    {
+      "slug": "layers",
+      "name": "layers",
+      "category": "媒体创作",
+      "sheet": "05-media-creative",
+      "slot": "11",
+      "description": "three stacked printed sheets",
+      "use_when": "",
+      "icon_path": "icons/layers.png"
+    },
+    {
+      "slug": "volume",
+      "name": "volume",
+      "category": "媒体创作",
+      "sheet": "05-media-creative",
+      "slot": "12",
+      "description": "speaker with two sound waves",
+      "use_when": "",
+      "icon_path": "icons/volume.png"
+    },
+    {
+      "slug": "headphones",
+      "name": "headphones",
+      "category": "媒体创作",
+      "sheet": "05-media-creative",
+      "slot": "13",
+      "description": "headphones with chunky ear pads",
+      "use_when": "",
+      "icon_path": "icons/headphones.png"
+    },
+    {
+      "slug": "record",
+      "name": "record",
+      "category": "媒体创作",
+      "sheet": "05-media-creative",
+      "slot": "14",
+      "description": "record dot inside a ring",
+      "use_when": "",
+      "icon_path": "icons/record.png"
+    },
+    {
+      "slug": "stop",
+      "name": "stop",
+      "category": "媒体创作",
+      "sheet": "05-media-creative",
+      "slot": "15",
+      "description": "square stop button in a rounded badge",
+      "use_when": "",
+      "icon_path": "icons/stop.png"
+    },
+    {
+      "slug": "sparkle-edit",
+      "name": "sparkle edit",
+      "category": "媒体创作",
+      "sheet": "05-media-creative",
+      "slot": "16",
+      "description": "small brush with star burst",
+      "use_when": "",
+      "icon_path": "icons/sparkle-edit.png"
+    },
+    {
+      "slug": "chat",
+      "name": "chat",
+      "category": "沟通社交",
+      "sheet": "06-communication-social",
+      "slot": "1",
+      "description": "speech bubble with offset fill",
+      "use_when": "",
+      "icon_path": "icons/chat.png"
+    },
+    {
+      "slug": "mail",
+      "name": "mail",
+      "category": "沟通社交",
+      "sheet": "06-communication-social",
+      "slot": "2",
+      "description": "envelope with seal dot",
+      "use_when": "",
+      "icon_path": "icons/mail.png"
+    },
+    {
+      "slug": "phone",
+      "name": "phone",
+      "category": "沟通社交",
+      "sheet": "06-communication-social",
+      "slot": "3",
+      "description": "handset with two signal arcs",
+      "use_when": "",
+      "icon_path": "icons/phone.png"
+    },
+    {
+      "slug": "team",
+      "name": "team",
+      "category": "沟通社交",
+      "sheet": "06-communication-social",
+      "slot": "4",
+      "description": "three simple avatar dots grouped together",
+      "use_when": "",
+      "icon_path": "icons/team.png"
+    },
+    {
+      "slug": "handshake",
+      "name": "handshake",
+      "category": "沟通社交",
+      "sheet": "06-communication-social",
+      "slot": "5",
+      "description": "two simplified hands meeting",
+      "use_when": "",
+      "icon_path": "icons/handshake.png"
+    },
+    {
+      "slug": "megaphone",
+      "name": "megaphone",
+      "category": "沟通社交",
+      "sheet": "06-communication-social",
+      "slot": "6",
+      "description": "megaphone with printed sound bursts",
+      "use_when": "",
+      "icon_path": "icons/megaphone.png"
+    },
+    {
+      "slug": "comment",
+      "name": "comment",
+      "category": "沟通社交",
+      "sheet": "06-communication-social",
+      "slot": "7",
+      "description": "rectangular comment bubble",
+      "use_when": "",
+      "icon_path": "icons/comment.png"
+    },
+    {
+      "slug": "link",
+      "name": "link",
+      "category": "沟通社交",
+      "sheet": "06-communication-social",
+      "slot": "8",
+      "description": "two chain links",
+      "use_when": "",
+      "icon_path": "icons/link.png"
+    },
+    {
+      "slug": "video-call",
+      "name": "video call",
+      "category": "沟通社交",
+      "sheet": "06-communication-social",
+      "slot": "9",
+      "description": "video window with small camera tab",
+      "use_when": "",
+      "icon_path": "icons/video-call.png"
+    },
+    {
+      "slug": "user-add",
+      "name": "user add",
+      "category": "沟通社交",
+      "sheet": "06-communication-social",
+      "slot": "10",
+      "description": "avatar with plus badge",
+      "use_when": "",
+      "icon_path": "icons/user-add.png"
+    },
+    {
+      "slug": "user-check",
+      "name": "user check",
+      "category": "沟通社交",
+      "sheet": "06-communication-social",
+      "slot": "11",
+      "description": "avatar with check badge",
+      "use_when": "",
+      "icon_path": "icons/user-check.png"
+    },
+    {
+      "slug": "at-sign",
+      "name": "at sign",
+      "category": "沟通社交",
+      "sheet": "06-communication-social",
+      "slot": "12",
+      "description": "hand-drawn at symbol, icon-like not typography-heavy",
+      "use_when": "",
+      "icon_path": "icons/at-sign.png"
+    },
+    {
+      "slug": "hashtag",
+      "name": "hashtag",
+      "category": "沟通社交",
+      "sheet": "06-communication-social",
+      "slot": "13",
+      "description": "chunky hashtag mark with dot accents",
+      "use_when": "",
+      "icon_path": "icons/hashtag.png"
+    },
+    {
+      "slug": "support",
+      "name": "support",
+      "category": "沟通社交",
+      "sheet": "06-communication-social",
+      "slot": "14",
+      "description": "headset avatar",
+      "use_when": "",
+      "icon_path": "icons/support.png"
+    },
+    {
+      "slug": "broadcast",
+      "name": "broadcast",
+      "category": "沟通社交",
+      "sheet": "06-communication-social",
+      "slot": "15",
+      "description": "central dot with two radiating arcs",
+      "use_when": "",
+      "icon_path": "icons/broadcast.png"
+    },
+    {
+      "slug": "community",
+      "name": "community",
+      "category": "沟通社交",
+      "sheet": "06-communication-social",
+      "slot": "16",
+      "description": "three speech bubbles forming a loose circle",
+      "use_when": "",
+      "icon_path": "icons/community.png"
+    },
+    {
+      "slug": "cart",
+      "name": "cart",
+      "category": "商业数据",
+      "sheet": "07-commerce-data",
+      "slot": "1",
+      "description": "shopping cart with two printed wheels",
+      "use_when": "",
+      "icon_path": "icons/cart.png"
+    },
+    {
+      "slug": "credit-card",
+      "name": "credit card",
+      "category": "商业数据",
+      "sheet": "07-commerce-data",
+      "slot": "2",
+      "description": "payment card with chip blocks, no numbers",
+      "use_when": "",
+      "icon_path": "icons/credit-card.png"
+    },
+    {
+      "slug": "gift",
+      "name": "gift",
+      "category": "商业数据",
+      "sheet": "07-commerce-data",
+      "slot": "3",
+      "description": "gift box with ribbon",
+      "use_when": "",
+      "icon_path": "icons/gift.png"
+    },
+    {
+      "slug": "ticket",
+      "name": "ticket",
+      "category": "商业数据",
+      "sheet": "07-commerce-data",
+      "slot": "4",
+      "description": "ticket with punched side circles",
+      "use_when": "",
+      "icon_path": "icons/ticket.png"
+    },
+    {
+      "slug": "badge",
+      "name": "badge",
+      "category": "商业数据",
+      "sheet": "07-commerce-data",
+      "slot": "5",
+      "description": "medal badge with star center",
+      "use_when": "",
+      "icon_path": "icons/badge.png"
+    },
+    {
+      "slug": "chart-up",
+      "name": "chart up",
+      "category": "商业数据",
+      "sheet": "07-commerce-data",
+      "slot": "6",
+      "description": "rising chart line over chunky bars",
+      "use_when": "",
+      "icon_path": "icons/chart-up.png"
+    },
+    {
+      "slug": "target",
+      "name": "target",
+      "category": "商业数据",
+      "sheet": "07-commerce-data",
+      "slot": "7",
+      "description": "target rings with a small arrow",
+      "use_when": "",
+      "icon_path": "icons/target.png"
+    },
+    {
+      "slug": "flag",
+      "name": "flag",
+      "category": "商业数据",
+      "sheet": "07-commerce-data",
+      "slot": "8",
+      "description": "milestone flag on a pole",
+      "use_when": "",
+      "icon_path": "icons/flag.png"
+    },
+    {
+      "slug": "wallet",
+      "name": "wallet",
+      "category": "商业数据",
+      "sheet": "07-commerce-data",
+      "slot": "9",
+      "description": "wallet with one coin peeking out",
+      "use_when": "",
+      "icon_path": "icons/wallet.png"
+    },
+    {
+      "slug": "coin",
+      "name": "coin",
+      "category": "商业数据",
+      "sheet": "07-commerce-data",
+      "slot": "10",
+      "description": "coin with small star mark",
+      "use_when": "",
+      "icon_path": "icons/coin.png"
+    },
+    {
+      "slug": "bag",
+      "name": "bag",
+      "category": "商业数据",
+      "sheet": "07-commerce-data",
+      "slot": "11",
+      "description": "shopping bag with handle",
+      "use_when": "",
+      "icon_path": "icons/bag.png"
+    },
+    {
+      "slug": "discount",
+      "name": "discount",
+      "category": "商业数据",
+      "sheet": "07-commerce-data",
+      "slot": "12",
+      "description": "percent mark on a tag shape",
+      "use_when": "",
+      "icon_path": "icons/discount.png"
+    },
+    {
+      "slug": "package-box",
+      "name": "package box",
+      "category": "商业数据",
+      "sheet": "07-commerce-data",
+      "slot": "13",
+      "description": "shipping box with tape",
+      "use_when": "",
+      "icon_path": "icons/package-box.png"
+    },
+    {
+      "slug": "truck",
+      "name": "truck",
+      "category": "商业数据",
+      "sheet": "07-commerce-data",
+      "slot": "14",
+      "description": "delivery truck with simple cargo box",
+      "use_when": "",
+      "icon_path": "icons/truck.png"
+    },
+    {
+      "slug": "diamond",
+      "name": "diamond",
+      "category": "商业数据",
+      "sheet": "07-commerce-data",
+      "slot": "15",
+      "description": "faceted gem with offset blue and violet layers",
+      "use_when": "",
+      "icon_path": "icons/diamond.png"
+    },
+    {
+      "slug": "storefront",
+      "name": "storefront",
+      "category": "商业数据",
+      "sheet": "07-commerce-data",
+      "slot": "16",
+      "description": "small storefront with striped awning",
+      "use_when": "",
+      "icon_path": "icons/storefront.png"
+    },
+    {
+      "slug": "clock",
+      "name": "clock",
+      "category": "时间地点",
+      "sheet": "08-time-place",
+      "slot": "1",
+      "description": "round clock with printed hands",
+      "use_when": "",
+      "icon_path": "icons/clock.png"
+    },
+    {
+      "slug": "hourglass",
+      "name": "hourglass",
+      "category": "时间地点",
+      "sheet": "08-time-place",
+      "slot": "2",
+      "description": "hourglass with grainy sand dots",
+      "use_when": "",
+      "icon_path": "icons/hourglass.png"
+    },
+    {
+      "slug": "map-pin",
+      "name": "map pin",
+      "category": "时间地点",
+      "sheet": "08-time-place",
+      "slot": "3",
+      "description": "location pin with inner dot",
+      "use_when": "",
+      "icon_path": "icons/map-pin.png"
+    },
+    {
+      "slug": "map",
+      "name": "map",
+      "category": "时间地点",
+      "sheet": "08-time-place",
+      "slot": "4",
+      "description": "folded map with curved route line",
+      "use_when": "",
+      "icon_path": "icons/map.png"
+    },
+    {
+      "slug": "compass",
+      "name": "compass",
+      "category": "时间地点",
+      "sheet": "08-time-place",
+      "slot": "5",
+      "description": "compass with sharp needle",
+      "use_when": "",
+      "icon_path": "icons/compass.png"
+    },
+    {
+      "slug": "globe",
+      "name": "globe",
+      "category": "时间地点",
+      "sheet": "08-time-place",
+      "slot": "6",
+      "description": "globe with two latitude curves",
+      "use_when": "",
+      "icon_path": "icons/globe.png"
+    },
+    {
+      "slug": "rocket",
+      "name": "rocket",
+      "category": "时间地点",
+      "sheet": "08-time-place",
+      "slot": "7",
+      "description": "rocket with tiny flame",
+      "use_when": "",
+      "icon_path": "icons/rocket.png"
+    },
+    {
+      "slug": "route-path",
+      "name": "route path",
+      "category": "时间地点",
+      "sheet": "08-time-place",
+      "slot": "8",
+      "description": "curved route connecting two pins",
+      "use_when": "",
+      "icon_path": "icons/route-path.png"
+    },
+    {
+      "slug": "timer",
+      "name": "timer",
+      "category": "时间地点",
+      "sheet": "08-time-place",
+      "slot": "9",
+      "description": "stopwatch with top button",
+      "use_when": "",
+      "icon_path": "icons/timer.png"
+    },
+    {
+      "slug": "calendar-clock",
+      "name": "calendar clock",
+      "category": "时间地点",
+      "sheet": "08-time-place",
+      "slot": "10",
+      "description": "calendar card plus small clock",
+      "use_when": "",
+      "icon_path": "icons/calendar-clock.png"
+    },
+    {
+      "slug": "building",
+      "name": "building",
+      "category": "时间地点",
+      "sheet": "08-time-place",
+      "slot": "11",
+      "description": "simple city building with windows",
+      "use_when": "",
+      "icon_path": "icons/building.png"
+    },
+    {
+      "slug": "car",
+      "name": "car",
+      "category": "时间地点",
+      "sheet": "08-time-place",
+      "slot": "12",
+      "description": "small car with round wheels",
+      "use_when": "",
+      "icon_path": "icons/car.png"
+    },
+    {
+      "slug": "train",
+      "name": "train",
+      "category": "时间地点",
+      "sheet": "08-time-place",
+      "slot": "13",
+      "description": "train front with two track lines",
+      "use_when": "",
+      "icon_path": "icons/train.png"
+    },
+    {
+      "slug": "location-target",
+      "name": "location target",
+      "category": "时间地点",
+      "sheet": "08-time-place",
+      "slot": "14",
+      "description": "target rings with location dot",
+      "use_when": "",
+      "icon_path": "icons/location-target.png"
+    },
+    {
+      "slug": "flag-pin",
+      "name": "flag pin",
+      "category": "时间地点",
+      "sheet": "08-time-place",
+      "slot": "15",
+      "description": "flag planted inside a pin",
+      "use_when": "",
+      "icon_path": "icons/flag-pin.png"
+    },
+    {
+      "slug": "signpost",
+      "name": "signpost",
+      "category": "时间地点",
+      "sheet": "08-time-place",
+      "slot": "16",
+      "description": "two directional sign arrows",
+      "use_when": "",
+      "icon_path": "icons/signpost.png"
+    },
+    {
+      "slug": "terminal",
+      "name": "terminal",
+      "category": "科技安全",
+      "sheet": "09-tech-security",
+      "slot": "1",
+      "description": "command window with abstract prompt block, no readable text",
+      "use_when": "",
+      "icon_path": "icons/terminal.png"
+    },
+    {
+      "slug": "code",
+      "name": "code",
+      "category": "科技安全",
+      "sheet": "09-tech-security",
+      "slot": "2",
+      "description": "angle bracket shapes with small dot",
+      "use_when": "",
+      "icon_path": "icons/code.png"
+    },
+    {
+      "slug": "database",
+      "name": "database",
+      "category": "科技安全",
+      "sheet": "09-tech-security",
+      "slot": "3",
+      "description": "stacked database cylinder",
+      "use_when": "",
+      "icon_path": "icons/database.png"
+    },
+    {
+      "slug": "cloud",
+      "name": "cloud",
+      "category": "科技安全",
+      "sheet": "09-tech-security",
+      "slot": "4",
+      "description": "cloud with sync dot",
+      "use_when": "",
+      "icon_path": "icons/cloud.png"
+    },
+    {
+      "slug": "wifi",
+      "name": "wifi",
+      "category": "科技安全",
+      "sheet": "09-tech-security",
+      "slot": "5",
+      "description": "wireless arcs around a dot",
+      "use_when": "",
+      "icon_path": "icons/wifi.png"
+    },
+    {
+      "slug": "lock",
+      "name": "lock",
+      "category": "科技安全",
+      "sheet": "09-tech-security",
+      "slot": "6",
+      "description": "padlock with keyhole",
+      "use_when": "",
+      "icon_path": "icons/lock.png"
+    },
+    {
+      "slug": "shield-check",
+      "name": "shield check",
+      "category": "科技安全",
+      "sheet": "09-tech-security",
+      "slot": "7",
+      "description": "shield with simple check",
+      "use_when": "",
+      "icon_path": "icons/shield-check.png"
+    },
+    {
+      "slug": "chip",
+      "name": "chip",
+      "category": "科技安全",
+      "sheet": "09-tech-security",
+      "slot": "8",
+      "description": "square chip with small pins",
+      "use_when": "",
+      "icon_path": "icons/chip.png"
+    },
+    {
+      "slug": "server",
+      "name": "server",
+      "category": "科技安全",
+      "sheet": "09-tech-security",
+      "slot": "9",
+      "description": "two stacked server blocks with lights",
+      "use_when": "",
+      "icon_path": "icons/server.png"
+    },
+    {
+      "slug": "robot",
+      "name": "robot",
+      "category": "科技安全",
+      "sheet": "09-tech-security",
+      "slot": "10",
+      "description": "friendly simple robot head",
+      "use_when": "",
+      "icon_path": "icons/robot.png"
+    },
+    {
+      "slug": "key",
+      "name": "key",
+      "category": "科技安全",
+      "sheet": "09-tech-security",
+      "slot": "11",
+      "description": "old key with round bow",
+      "use_when": "",
+      "icon_path": "icons/key.png"
+    },
+    {
+      "slug": "fingerprint",
+      "name": "fingerprint",
+      "category": "科技安全",
+      "sheet": "09-tech-security",
+      "slot": "12",
+      "description": "curved fingerprint strokes",
+      "use_when": "",
+      "icon_path": "icons/fingerprint.png"
+    },
+    {
+      "slug": "mobile",
+      "name": "mobile",
+      "category": "科技安全",
+      "sheet": "09-tech-security",
+      "slot": "13",
+      "description": "smartphone with blank screen",
+      "use_when": "",
+      "icon_path": "icons/mobile.png"
+    },
+    {
+      "slug": "desktop",
+      "name": "desktop",
+      "category": "科技安全",
+      "sheet": "09-tech-security",
+      "slot": "14",
+      "description": "monitor with short stand",
+      "use_when": "",
+      "icon_path": "icons/desktop.png"
+    },
+    {
+      "slug": "encrypted-file",
+      "name": "encrypted file",
+      "category": "科技安全",
+      "sheet": "09-tech-security",
+      "slot": "15",
+      "description": "page with small lock badge",
+      "use_when": "",
+      "icon_path": "icons/encrypted-file.png"
+    },
+    {
+      "slug": "backup-vault",
+      "name": "backup vault",
+      "category": "科技安全",
+      "sheet": "09-tech-security",
+      "slot": "16",
+      "description": "rounded vault with stacked papers",
+      "use_when": "",
+      "icon_path": "icons/backup-vault.png"
+    },
+    {
+      "slug": "coffee-cup",
+      "name": "coffee cup",
+      "category": "生活装饰",
+      "sheet": "10-life-decor-lively",
+      "slot": "1",
+      "description": "takeaway coffee cup with steam curls",
+      "use_when": "",
+      "icon_path": "icons/coffee-cup.png"
+    },
+    {
+      "slug": "bowl",
+      "name": "bowl",
+      "category": "生活装饰",
+      "sheet": "10-life-decor-lively",
+      "slot": "2",
+      "description": "bowl with short chopstick-like strokes",
+      "use_when": "",
+      "icon_path": "icons/bowl.png"
+    },
+    {
+      "slug": "apple",
+      "name": "apple",
+      "category": "生活装饰",
+      "sheet": "10-life-decor-lively",
+      "slot": "3",
+      "description": "apple with one leaf",
+      "use_when": "",
+      "icon_path": "icons/apple.png"
+    },
+    {
+      "slug": "pill",
+      "name": "pill",
+      "category": "生活装饰",
+      "sheet": "10-life-decor-lively",
+      "slot": "4",
+      "description": "two capsule pills",
+      "use_when": "",
+      "icon_path": "icons/pill.png"
+    },
+    {
+      "slug": "first-aid",
+      "name": "first aid",
+      "category": "生活装饰",
+      "sheet": "10-life-decor-lively",
+      "slot": "5",
+      "description": "first-aid kit with simple cross",
+      "use_when": "",
+      "icon_path": "icons/first-aid.png"
+    },
+    {
+      "slug": "plant-pot",
+      "name": "plant pot",
+      "category": "生活装饰",
+      "sheet": "10-life-decor-lively",
+      "slot": "6",
+      "description": "small plant in a pot",
+      "use_when": "",
+      "icon_path": "icons/plant-pot.png"
+    },
+    {
+      "slug": "leaf",
+      "name": "leaf",
+      "category": "生活装饰",
+      "sheet": "10-life-decor-lively",
+      "slot": "7",
+      "description": "single leaf with rough ink vein",
+      "use_when": "",
+      "icon_path": "icons/leaf.png"
+    },
+    {
+      "slug": "mountain",
+      "name": "mountain",
+      "category": "生活装饰",
+      "sheet": "10-life-decor-lively",
+      "slot": "8",
+      "description": "two layered mountain shapes",
+      "use_when": "",
+      "icon_path": "icons/mountain.png"
+    },
+    {
+      "slug": "wave",
+      "name": "wave",
+      "category": "生活装饰",
+      "sheet": "10-life-decor-lively",
+      "slot": "9",
+      "description": "bold wave with two droplets",
+      "use_when": "",
+      "icon_path": "icons/wave.png"
+    },
+    {
+      "slug": "flower",
+      "name": "flower",
+      "category": "生活装饰",
+      "sheet": "10-life-decor-lively",
+      "slot": "10",
+      "description": "five-petal flower",
+      "use_when": "",
+      "icon_path": "icons/flower.png"
+    },
+    {
+      "slug": "ribbon",
+      "name": "ribbon",
+      "category": "生活装饰",
+      "sheet": "10-life-decor-lively",
+      "slot": "11",
+      "description": "flowing ribbon strip",
+      "use_when": "",
+      "icon_path": "icons/ribbon.png"
+    },
+    {
+      "slug": "confetti",
+      "name": "confetti",
+      "category": "生活装饰",
+      "sheet": "10-life-decor-lively",
+      "slot": "12",
+      "description": "small burst of dots and paper bits",
+      "use_when": "",
+      "icon_path": "icons/confetti.png"
+    },
+    {
+      "slug": "burst",
+      "name": "burst",
+      "category": "生活装饰",
+      "sheet": "10-life-decor-lively",
+      "slot": "13",
+      "description": "comic-like starburst",
+      "use_when": "",
+      "icon_path": "icons/burst.png"
+    },
+    {
+      "slug": "spiral",
+      "name": "spiral",
+      "category": "生活装饰",
+      "sheet": "10-life-decor-lively",
+      "slot": "14",
+      "description": "loose spiral with misregistered edge",
+      "use_when": "",
+      "icon_path": "icons/spiral.png"
+    },
+    {
+      "slug": "tape",
+      "name": "tape",
+      "category": "生活装饰",
+      "sheet": "10-life-decor-lively",
+      "slot": "15",
+      "description": "crossed tape strips",
+      "use_when": "",
+      "icon_path": "icons/tape.png"
+    },
+    {
+      "slug": "ink-splash",
+      "name": "ink splash",
+      "category": "生活装饰",
+      "sheet": "10-life-decor-lively",
+      "slot": "16",
+      "description": "controlled splash with scattered dots",
+      "use_when": "",
+      "icon_path": "icons/ink-splash.png"
+    }
+  ],
+  "categories": [
+    "内容文件",
+    "商业数据",
+    "媒体创作",
+    "导航控制",
+    "方向动作",
+    "时间地点",
+    "核心状态",
+    "沟通社交",
+    "生活装饰",
+    "科技安全"
+  ]
+}
